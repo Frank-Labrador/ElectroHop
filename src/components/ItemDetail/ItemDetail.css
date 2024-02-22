@@ -1,0 +1,36 @@
+.CardItem1 {
+    border: 1px solid #ccc;
+    border-radius: 12px;
+
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+
+    padding: 30px;
+
+    margin: 20px;
+    width: 400px;
+
+}
+
+.Header {
+    margin-bottom: 20px;
+}
+
+.ItemHeader {
+    font-size: 24px;
+
+}
+
+.ItemImg {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 20px;
+
+}
+
+.Info {
+    font-size: 18px;
+
+    margin-bottom: 10px;
+
+}
+

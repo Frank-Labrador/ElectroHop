@@ -1,0 +1,27 @@
+.Counter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Counter .Controls{
+    display: flex;
+    padding: 12px;
+    gap: 10px;
+}
+
+.Counter .Controls .button{
+
+    background-color: #1985A1;
+    width: 25px;
+    color: aqua;
+}
+button{
+    background-color: #1985A1;
+    font-size: 20px;
+}
+
+.button:hover{
+    background-color: black;
+    color: aqua;
+}

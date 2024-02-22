@@ -10,54 +10,5 @@
   min-height: 100vh;
 }
 
-h1{
-  margin: 50px;
-  font-size: 35px;
-}
-
-/* estilos del nav */
-
-.Nav{
-  padding-top: 20px;
-  background-color: #1985A1;
-  border: groove 3px #090C08 ;
-  text-align: center;
-  row-gap: 20px;
-}
-
-.Nav h3 {
-  font-size: 25px;
-}
-
-.Nav button{
-  margin: 10px;
-  width: 15rem;
-  background-color: #090C08 ;
-  color: #2fe6de ;
-  font-size: 30px;
-  
-}
-
-.Nav button:hover{
-  background-color:#2fe6de ;
-  color: #090C08;
-}
-
-
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
 
 
