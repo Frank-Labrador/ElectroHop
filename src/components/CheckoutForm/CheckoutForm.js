@@ -3,7 +3,6 @@ import {useState} from 'react'
 
 const CheckoutForm = ({onCofirm}) => {
     const [name, setName] = useState ('')
-    const [phone, setPhone] = useState ('')
     const [email, setEmail] = useState('')
 
     const handleConfirm = (event) => {

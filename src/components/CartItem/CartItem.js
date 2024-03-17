@@ -5,7 +5,7 @@ import { useContext } from "react";
 
 
 
-const CardItem = ({}) => {
+const CardItem = ({item}) => {
     const {removeItem} = useContext(CartContext);
 
     return (
@@ -17,7 +17,7 @@ const CardItem = ({}) => {
                 <h2> {item.name}</h2>
                 <p>Cantidad : {item.quantity}</p>
                 <p>Subtotal: {item.quantity * item.price}</p>
-                <button onClick={() => removeItem(Item.id)}>Eliminar</button>
+                <button onClick={() => removeItem(item.id)}>Eliminar</button>
             </div>
 
         </div>
