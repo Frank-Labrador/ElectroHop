@@ -1,32 +1,38 @@
 import './ItemDetailContainer.css'
-import { useState, useEffect } from 'react'
-import ItemDetail from '../ItemDetail/ItemDetail'
-import { getProductById } from '../../asyncMock'
-import { useParams } from 'react-router-dom'
+import { useState, useEffect } from 'react';
+import ItemDetail from '../ItemDetail/ItemDetail';
+import { getProductById, getProductByCategory } from '../../asyncMock';
+import { useParams } from 'react-router-dom';
 
-
-
-const ItemDetailContainer =() => {
-    const [product, setProduct] = useState(null)
-
-    const {itemId} = useParams()
+const ItemDetailContainer = () => {
+    const [product, setProduct] = useState(null);
+    const { itemId, categoryId } = useParams();
 
     useEffect(() => {
-        getProductById (itemId)
-        .then(response => {
-            setProduct(response)
-        })
-        .catch(error => {
-            console.error(error)
-        })
-    }, [itemId])
-
+        if (itemId) {
+            getProductById(itemId)
+                .then(response => {
+                    setProduct(response);
+                })
+                .catch(error => {
+                    console.error(error);
+                });
+        } else if (categoryId) {
+            getProductByCategory(categoryId)
+                .then(products => {
+                    setProduct(products[0]);
+                })
+                .catch(error => {
+                    console.error(error);
+                });
+        }
+    }, [itemId, categoryId]);
 
     return (
         <div className='ItemDetailContainer'>
-            <ItemDetail {...product}/>
+            {product && <ItemDetail {...product} />}
         </div>
-    )
+    );
 }
 
-export default ItemDetailContainer
+export default ItemDetailContainer;

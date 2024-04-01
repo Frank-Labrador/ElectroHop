@@ -27,7 +27,7 @@ export const getProductById = (productId)=>{
 }
 
 
-export const getProducsByCategory = (categoryId)=>{
+export const getProductByCategory = (categoryId)=>{
     return new Promise((resolve)=>{
         resolve(products.filter(prod=> prod.category === categoryId))
     },500)

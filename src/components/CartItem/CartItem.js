@@ -5,14 +5,11 @@ import { useContext } from "react";
 
 
 
-const CardItem = ({item}) => {
+const CartItem = ({item}) => {
     const {removeItem} = useContext(CartContext);
 
     return (
         <div>
-            <picture>
-                <img src={item.img} alt = {item.name} />
-            </picture>
             <div>
                 <h2> {item.name}</h2>
                 <p>Cantidad : {item.quantity}</p>
@@ -24,4 +21,4 @@ const CardItem = ({item}) => {
     )
 }
 
-export default CardItem
+export default CartItem

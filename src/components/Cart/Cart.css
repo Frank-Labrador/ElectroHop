@@ -1,0 +1,51 @@
+/* Cart.css */
+
+.Cart {
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.Cart h1 {
+    font-size: 30px;
+
+}
+
+.Cart h3 {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.Cart .Button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #1985A1;
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.Cart .Button:hover {
+    background-color: aqua;
+    color:#000000
+}
+
+.Cart .Option {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #1985A1;
+    color: #000000;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.Cart .Option:hover {
+    background-color: aqua;
+    color: #000000;
+}
