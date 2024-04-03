@@ -2,14 +2,17 @@ import './ItemCount.css'
 import { useState } from 'react'
 
 const ItemCount = ({stock, initial, onAdd}) => {
+    // Estado para almacenar la cantidad de productos seleccionada
     const [quantity, setQuantity] = useState (initial)
 
+// Función para incrementar la cantidad de productos
     const increment =() => {
         if (quantity < stock){
             setQuantity (quantity +1)
         }
     }
 
+    // Función para decrementar la cantidad de productos
     const decrement = () => {
         if(quantity > 1){
             setQuantity(quantity-1)
