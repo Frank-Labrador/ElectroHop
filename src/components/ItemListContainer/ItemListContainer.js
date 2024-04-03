@@ -1,3 +1,4 @@
+import './ItemListContainer.css'
 import { useState, useEffect } from "react"
 
 import ItemList from '../ItemList/ItemList'
@@ -38,7 +39,7 @@ const ItemListContainer = ({ greeting }) => {
         }, [categoryId])
 
     return (
-        <div>
+        <div className="ItemListContainer">
             <h1>{greeting} </h1>
             {loading ? <p>Cargando...</p> : <ItemList products={products} /> }
         </div>

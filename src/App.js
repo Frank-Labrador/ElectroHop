@@ -4,6 +4,7 @@ import NavBar from './components/NavBar/NavBar';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
 import { CartProvider } from './context/CartContext';
+import Checkout from './components/Checkout/Checkout'
 import Cart  from './components/Cart/Cart';
 
 function App() {
@@ -13,10 +14,11 @@ function App() {
             <CartProvider>
             <NavBar />
             <Routes>
-            <Route path='/' element={<ItemListContainer greeting={'Bienvenidos'}/>} />
+            <Route path='/' element={<ItemListContainer greeting={'Bienvenidos a la mejor tiendita'}/>} />
             <Route path='/category/:categoryId' element={<ItemListContainer />} />
-            <Route path='/item/:itemId' element={<ItemDetailContainer/>}/> {/* Aquí se corrigió */}
+            <Route path='/item/:itemId' element={<ItemDetailContainer/>}/> 
             <Route path='/cart' element= {<Cart/>} />
+            <Route path='/Checkout' element={<Checkout/>} />
             <Route path='*' element={<h1>404 NOT FOUND</h1>}/>
             </Routes>
             </CartProvider>

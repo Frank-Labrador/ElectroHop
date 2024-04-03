@@ -1,3 +1,4 @@
+import './CartItem.css'
 import { CartContext } from "../../context/CartContext";
 
 import { useContext } from "react";
@@ -9,7 +10,7 @@ const CartItem = ({item}) => {
     const {removeItem} = useContext(CartContext);
 
     return (
-        <div>
+        <div className="ProductItem">
             <div>
                 <h2> {item.name}</h2>
                 <p>Cantidad : {item.quantity}</p>
